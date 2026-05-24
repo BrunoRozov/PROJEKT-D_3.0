@@ -14,11 +14,16 @@ body {
   nav {
     ul {
       li {
-        font-size: 1em;
+        &:nth-child(1) {
+          font-size: 1em;
+        }
+        &:nth-child(2) {
+          font-size: 2em;
+        }
       }
-    }
-    a {
-      text-decoration: none;
+      a {
+        text-decoration: none;
+      }
     }
   }
 }
@@ -59,4 +64,14 @@ body {
 .border1 {
   @extend %extend-border;
   margin: 20px;
+}
+
+.element {
+  a {
+    text-decoration: none;
+    color: black;
+    &:hover {
+      color: white;
+    }
+  }
 }
